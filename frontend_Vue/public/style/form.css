@@ -1,0 +1,99 @@
+
+.Form_left {
+	text-align: left;
+	font-size: 1vw;
+	display: block;
+}
+
+.Form_left > input {
+	max-width: 15vw;
+	display: block;
+}
+
+.Form_right {
+	margin-left: 2vw;
+	text-align: left;
+	font-size: 1vw;
+	display: block;
+}
+
+.Form_right > input {
+	max-width: 4vw;
+	display: block;
+}
+
+.Form_center {
+	margin-left: 15vw;
+	text-align: left;
+	font-size: 1vw;
+	display: block;
+}
+
+.Form_center > input {
+	max-width: 15vw;
+	display: block;
+}
+
+input:focus {
+	background-color: lightblue;
+}
+
+input:read-only {
+	background-color: rgba(255, 255, 255, 0);
+}
+input:read-write {
+	background-color: rgba(255, 255, 255, 1);
+}
+
+/* input[type="text"], input[type="date"], input[type="email"], input[type="number"]:invalid:not(:focus):not(:placeholder-shown) {
+	background: white;
+} */
+
+input, select, textarea {
+	border: 0;
+	-ms-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    box-sizing:content-box;
+	-webkit-box-sizing:content-box;
+	color: rgb(0, 0, 0);
+}
+
+.inputWidth {
+	width: 10vw;
+	height: 1.5vw;
+}
+
+.formButton {
+	padding: 0.5vw 1.5vw;
+	margin: 2vw 1vw 0 1vw;
+	font-size: 1vw;
+	font-weight: normal;
+	color: black;
+	background: white;
+	border-radius: 0.5vw;
+	border: 0;
+	text-align: center;
+}
+
+input, select {
+	max-width: 10vw;
+	padding: 0 1vw;
+	justify-self: stretch;
+	text-decoration: none;
+	max-height: 5vw;
+	font-size: 1vw;
+}
+
+input [type=checkbox] {
+	max-width: 100%;
+}
+
+.formButton:hover, 
+input[type=submit]:hover {
+	background: rgb(207, 214, 252);
+}
+
+.error_msg {
+	font-size: 1vw;
+	padding-left: 1vw;
+}
