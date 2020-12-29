@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="style/form.css"/>
+    <link rel="stylesheet" href="style/buttons.css"/>
+    <script type="text/javascript" src="scripts/edytuj_uzytkownika_script.js"></script>
+    <title>Edycja użytkownika</title>
+  </head>
+
+  <body>
+	<div id="outer-grid">
+		<div id="top-inner-grid">
+			<div>
+				<img id="logo" src="resources/logo.png">
+			</div>
+			<span id="title">Edycja użytkownika</span>
+			<div class="menu">
+				<nav>
+					<a href="lista_lotow.html" class="navbutton">Lista lotów</a>
+					<a href="lista_uzytkownikow.html" class="navbutton">Lista użytkowników</a>
+				</nav>
+			</div>
+		</div>
+
+		<ul class="breadcrumb">
+            <li><a href="index1.html">Strona główna</a></li>
+            <li><a href="lista_uzytkownikow.html">Lista użytkowników</a></li>
+            <li><a href="szczegoly_uzytkownika.html">Szczegóły użytkownika</a></li>
+			<li>Edycja użytkownika</li>
+		</ul>
+
+		<div id="middle-inner-grid">
+            <div></div>
+			<div id="center">
+                <span class="Form_left">
+                    <table class="transparent">
+                        <form id="myForm" action="edycja_uzytkownika (zmiany_zapisano).html">
+                            <tr>
+                                <td align="right"><label>Imię</label></td>
+                                <td><input type="text" id="firstname"/></input></td>
+                                <td><label id="firstnameError" style="display: inline; color: red; font-weight: bold;" class="error_msg"></label></td>
+                            </tr>
+                            <tr>
+                                <td align="right"><label>Nazwisko</label></td>
+                                <td><input type="text" id="lastname"/></input></td>     
+                                <td><label id="lastnameError" style="display: block; color: red; font-weight: bold;" class="error_msg"></label></td>                   
+                            </tr>
+                            <tr>
+                                <td align="right"><label>PESEL</label></td>
+                                <td><input type="number" id="pesel"/></input></td>  
+                                <td><label id="peselError" style="display: block; color: red; font-weight: bold;" class="error_msg"></label></td>                      
+                            </tr>
+                            <tr>
+                                <td align="right"><label>Waga w kg</label></td>
+                                <td><input type="number" id="weight"/></input></td> 
+                                <td><label id="weightError" style="display: block; color: red; font-weight: bold;" class="error_msg"></label></td>                      
+                            </tr>
+                            <tr>
+                                <td align="right"><label>Adres email</label></td>
+                                <td><input type="email" id="email"/></input></td>
+                                <td><label id="emailError" style="display: block; color: red; font-weight: bold;" class="error_msg"></label></td>                        
+                            </tr>                        
+                            <tr>
+                                <td>
+                                    <input type="button" class="formButton" onclick="location.href='szczegoly_uzytkownika.html'" value="Powrót"/>
+                                </td>
+                                <td>
+                                    <input type="submit" onclick="validate()" class="formButton" value="Zatwierdź"/>
+                                </td>
+                            </tr>
+                        </form>
+                    </table>
+                    <p id="summary" style="color: red;"></p>
+                </span>                
+            </div>
+		</div>
+		
+		<div id="bottom-inner-grid">
+			<footer>
+				<a href="index1.html" class="button">Strona główna</a>
+				<a href="kontakt.html" class="button">Kontakt</a>
+				<a href="o_nas.html" class="button">O nas</a>
+				<a href="pomoc.html" class="button">Pomoc</a>
+			</footer>
+		</div>		
+	  </div>
+  </body>
+</html>

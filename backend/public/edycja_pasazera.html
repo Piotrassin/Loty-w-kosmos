@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="style/form.css"/>
+    <link rel="stylesheet" href="style/buttons.css"/>
+    <script type="text/javascript" src="scripts/edytuj_pasazera_script.js"></script>
+
+    <title>Edycja pasażera</title>
+  </head>
+
+  <body>
+	<div id="outer-grid">
+		<div id="top-inner-grid">
+			<div>
+				<img id="logo" src="resources/logo.png">
+			</div>
+			<span id="title">Edycja pasażera</span>
+			<div class="menu">
+				<nav>
+					<a href="lista_lotow.html" class="navbutton">Lista lotów</a>
+					<a href="lista_uzytkownikow.html" class="navbutton">Lista użytkowników</a>
+				</nav>
+			</div>
+		</div>
+
+		<ul class="breadcrumb">
+            <li><a href="index1.html">Strona główna</a></li>
+            <li><a href="lista_lotow.html">Lista lotów</a></li>
+            <li><a href="szczegoly_lotu.html">Szczegóły lotu</a></li>
+            <li><a href="szczegoly_pasazera.html">Szczegóły pasażera</a></li>
+			<li>Edycja pasażera</li>
+		</ul>
+
+		<div id="middle-inner-grid">
+            <div></div>
+			<div id="center">
+                <span class="Form_left">
+                    <form id="myForm" action="edycja_pasazera (zmiany zapisano).html">
+                        <table class="transparent">
+                            <tr>
+                                <td align="right"><label>Imię</label></td>
+                                <td>
+                                    <input type="text" id="paxName" name="paxName"/></input>
+                                    <label id="paxNameError" style="display: block; color: red; font-weight: bold;" class="error_msg"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right"><label>Nazwisko</label></td>
+                                <td>
+                                    <input type="text" id="paxLastname"/></input>   
+                                    <label id="paxLastnameError" style="display: block; color: red; font-weight: bold;" class="error_msg"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right"><label>PESEL</label></td>
+                                <td>
+                                    <input type="number" id="pesel"/></input>
+                                    <label id="peselError" style="display: block; color: red; font-weight: bold;" class="error_msg"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right"><label>Waga</label></td>
+                                <td>
+                                    <input type="number" id="paxMass" value=""/></input>
+                                    <label id="paxMassError" style="display: block; color: red; font-weight: bold;" class="error_msg"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right"><label>Adres email</label></td>
+                                <td>
+                                    <input type="email" id="email" value=""/></input>
+                                    <label id="emailError" style="display: block; color: red; font-weight: bold;" class="error_msg"></label>
+                                </td>
+                            </tr>                        
+
+                            <tr><td><label></label></td></tr>
+
+                            <tr>
+                                <td align="right"><label>Nr biletu</label></td>
+                                <td><label>45645</label></td>
+                            </tr>
+
+                            <tr><td><label></label></td></tr>
+
+                            <tr>
+                                <td align="right"><label>Waga w kg:</label></td>
+                                <td>
+                                    <input type="number" name="luggageMass" id="luggageMass"/>
+                                    <label id="luggageMassError" style="display: block; color: red; font-weight: bold;" class="error_msg"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right"><label>Wymiary w cm</label></td>
+                                <td>
+                                    <input type="number" id="luggageX" name="luggageX" placeholder="Długość"/>
+                                    <label id="luggageXError" style="display: block; color: red; font-weight: bold;" class="error_msg"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="number" id="luggageY" name="luggageY" placeholder="Szerokość"/></input>
+                                    <label id="luggageYError" style="display: block; color: red; font-weight: bold;" class="error_msg"></label>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="number" id="luggageZ" name="luggageZ" placeholder="Wysokość"/></input>
+                                    <label id="luggageZError" style="display: block; color: red; font-weight: bold;" class="error_msg"></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="button" class="formButton" onclick="location.href='szczegoly_pasazera.html'" value="Powrót"/>
+                                </td>
+                                <td>
+                                    <button type="submit" class="formButton" onclick="validate()">Zatwierdź</button>
+                                </td>
+                            </tr>
+                        </table>
+                        <p id="summary" style="color: red;"></p>
+                    </form>
+                </span>                
+            </div>
+		</div>
+		
+		<div id="bottom-inner-grid">
+			<footer>
+				<a href="index1.html" class="button">Strona główna</a>
+				<a href="kontakt.html" class="button">Kontakt</a>
+				<a href="o_nas.html" class="button">O nas</a>
+				<a href="pomoc.html" class="button">Pomoc</a>
+			</footer>
+		</div>		
+	  </div>
+  </body>
+</html>
